@@ -11,8 +11,8 @@
 
 #define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 
-#define kGridHeight 3
-#define kGridWidth 3
+#define kGridHeight 4
+#define kGridWidth 4
 
 @interface ViewController ()
 
@@ -31,7 +31,7 @@
     
     NSLog(@"Here is the grid.");
 
-    srand(1982731);
+    srand(1982734);
     //srand(time(NULL));
     self.grid = [NSMutableArray new];
     for (NSInteger r=0; r<kGridHeight; r++) {
@@ -72,7 +72,7 @@
 //    NSInteger depth = 0;
 //    [self traverse:root visitedNodeArr:visitedNodeArr depth:depth];
     
-    NSLog(@"\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\nLongest path found is of depth %d", self.maxDepth);
+    NSLog(@"\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\nLongest path found is of length %d", self.maxDepth+1);
     for (Node *node in self.longestPathArr) {
         NSLog(@"%@", node);
     }
