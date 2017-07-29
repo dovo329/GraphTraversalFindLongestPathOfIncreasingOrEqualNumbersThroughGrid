@@ -51,10 +51,23 @@
     [self createGraph];
     
     //[self traverseGraphFromRow:2 column:1];
-    Node *root = self.nodeGraph[2][1];
-    NSMutableArray *visitedNodeArr = [NSMutableArray new];
-    NSInteger depth = 0;
-    [self traverse:root visitedNodeArr:visitedNodeArr depth:depth];
+    
+    for (int r=0; r<self.nodeGraph.count; r++) {
+        NSMutableArray *nodeGraphRowArr = self.nodeGraph[r];
+        for (int c=0; c<nodeGraphRowArr.count; c++) {
+            Node *root = (Node *)self.nodeGraph[r][c];
+            
+            NSLog(@"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\nStarting search for root node %@", root);
+
+            NSMutableArray *visitedNodeArr = [NSMutableArray new];
+            NSInteger depth = 0;
+            [self traverse:root visitedNodeArr:visitedNodeArr depth:depth];
+        }
+    }
+//    Node *root = self.nodeGraph[2][1];
+//    NSMutableArray *visitedNodeArr = [NSMutableArray new];
+//    NSInteger depth = 0;
+//    [self traverse:root visitedNodeArr:visitedNodeArr depth:depth];
     
     NSLog(@"\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\nLongest path found is of depth %d", self.maxDepth);
     for (Node *node in self.longestPathArr) {
