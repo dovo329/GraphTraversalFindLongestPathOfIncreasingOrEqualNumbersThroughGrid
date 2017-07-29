@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "433662296D2B74028D5E30A1D715266B6A8F1843",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "433662296D2B74028D5E30A1D715266B6A8F1843" : 9223372036854775807,
+    "8D9DC5EAD0CC5F12A1AB5A6F5DBEC66C578CE34A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "063F7EBC-9DD7-433C-9D68-7BE69252496E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "433662296D2B74028D5E30A1D715266B6A8F1843" : "GraphTraversalFindLongestPathOfIncreasingOrEqualNumbersThroughGrid\/",
+    "8D9DC5EAD0CC5F12A1AB5A6F5DBEC66C578CE34A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GraphTraversal",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GraphTraversal.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dovo329\/GraphTraversalFindLongestPathOfIncreasingOrEqualNumbersThroughGrid.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "433662296D2B74028D5E30A1D715266B6A8F1843"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SiEOC\/Park-Perks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D9DC5EAD0CC5F12A1AB5A6F5DBEC66C578CE34A"
+    }
+  ]
+}
