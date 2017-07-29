@@ -31,11 +31,14 @@
     
     NSLog(@"Here is the grid.");
 
+    srand(1982731);
+    //srand(time(NULL));
     self.grid = [NSMutableArray new];
     for (NSInteger r=0; r<kGridHeight; r++) {
         NSMutableArray *rowArr = [NSMutableArray new];
         for (NSInteger c=0; c<kGridWidth; c++) {
-            NSInteger data = (((r+1)*78234)/(c+1)) % 10;
+            //NSInteger data = (((r+1)*78234)/(c+1)) % 10;
+            NSInteger data = rand() % 10;
             NSNumber *num = [NSNumber numberWithInteger:data];
             [rowArr addObject:num];
         }
